@@ -1,6 +1,7 @@
 import 'package:flight_appointment_app/pages/landingPage.dart';
 import 'package:flight_appointment_app/pages/loginPage.dart';
-import 'package:flight_appointment_app/pages/signupPage.dart'; 
+import 'package:flight_appointment_app/pages/signupPage.dart';
+import 'package:flight_appointment_app/pages/homePage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,8 +18,9 @@ class FlightApp extends StatelessWidget {
       title: 'Mateo Group Project',
       home: const Landingpage(),
       routes: {
-        '/signup': (context) => const SignupPage(), 
-        '/login' : (context) => const LoginPage(),
+        '/signup': (context) => const SignupPage(),
+        '/login': (context) => const LoginPage(),
+        '/home': (context) => const HomePage(),
       },
     );
   }

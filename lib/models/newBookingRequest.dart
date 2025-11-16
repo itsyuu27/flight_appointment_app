@@ -18,7 +18,6 @@ class NewBookingRequest {
       'user_id': userId,
       'flight_id': flightId,
       'total_price': totalPrice,
-      // Convert list of Passenger objects to list of Maps
       'passengers': passengers.map((p) => p.toJson()).toList(),
     };
   }
